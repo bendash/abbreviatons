@@ -31,18 +31,17 @@ There are two main parts. parser and crawler. Both are configurated out of the b
 
 #### Parser (module.tx_abbreviations.parser) ####
 
+| Property       | Data Type        | Default                    |
+| :------------- | :--------------: | --------------------------:|
+| excludeTags    | list of strings  |    `h1,h2,h3,h4,h5,h6,a`   |
+| ignoreCase     | boolean          |    `1`                     |
+| ignoreLanguage | boolean          |    `0`                     |
+
 Property details
-
-
-| Property       | Data Type       | Default  |
-| -------------- |:---------------:| --------:|
-| excludeTags    | list of strings |    a     |
-| ignoreCase     | boolean         |    1     |
-| ignoreLanguage | boolean         |    0     |
 
 **excludeTags**
 ```
-  module.tx_abbreviations.parser.excludeTags = string
+  module.tx_abbreviations.parser.excludeTags = string,string
 ```
 Comma-separated list of tags. Content of this tags will be excluded from replacement.
 
@@ -59,3 +58,25 @@ module.tx_abbreviations.parser.ignoreLanguage = boolean
 If set, language of abbreviation records or the current text is ignored.
 
 #### Crawler (module.tx_abbreviations.settings.crawler) ####
+
+| Property               |  Data type       | Default              |
+| :----------------------| :--------------: | -------------------: |
+| tables                 | array            | `tt_content { ... }` |
+| tables.[table].fields  | list of strings  | `bodytext`           |
+
+Property details
+
+**tables** 
+```
+module.tx_abbreviations.settings.crawler.tables = tablename
+module.tx_abbreviations.settings.crawler.tables.tablename {
+  ...
+}
+```
+Tables where the crawler should search for the fields. (e.g 'tt_content')
+
+**tables.[table].fields**
+```
+module.tx_abbreviations.settings.crawler.tables.[tablename].fields = fieldname1,fieldname2
+```
+Comma-separated list of fields for the table where abbreviations should be searched. (e.g 'bodytext,imagecaption')

@@ -1,0 +1,23 @@
+module.tx_abbreviations {
+	
+	settings {
+		parser {
+			excludeTags = {$module.tx_abbreviations.settings.parser.excludeTags}
+			ignoreCase = {$module.tx_abbreviations.settings.parser.ignoreCase}
+			ignoreLanguage = {$module.tx_abbreviations.settings.parser.ignoreLanguage}
+		}
+		crawler {
+			tables {
+				tt_content {
+					fields = bodytext
+					additionalWhere = AND (CType='text' OR CType='textpic')
+				}
+				
+				tx_news_domain_model_news {
+					fields = bodytext
+				}
+			}
+		}
+	}
+
+}

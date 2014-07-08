@@ -1,0 +1,12 @@
+module.tx_abbreviations {
+	settings {
+		parser {
+			# cat=module.tx_abbreviations/settings/a; type=string; label=exclude Tags
+			excludeTags = h1,h2,h3,h4,h5,h6,a
+			# cat=module.tx_abbreviations/settings/a; type=boolean; label=ignore Case
+			ignoreCase = 1
+			# cat=module.tx_abbreviations/settings/a; type=boolean; label=ignore Language
+			ignoreLanguage = 0
+		}
+	}
+}

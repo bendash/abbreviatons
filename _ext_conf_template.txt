@@ -1,0 +1,2 @@
+# cat=basic/enable/1; type=user[EXT:abbreviations/Classes/Utility/ExtensionManagerConfigurationUtility.php:WorldDirect\Abbreviations\Utility\ExtensionManagerConfigurationUtility->buildTableSelector]; label=Tables where glossary words are searched
+tables = 

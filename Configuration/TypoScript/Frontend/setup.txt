@@ -1,0 +1,12 @@
+plugin.tx_abbreviations {
+	view {
+		templateRootPath = {$plugin.tx_abbreviations.view.templateRootPath}
+		partialRootPath = {$plugin.tx_abbreviations.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_abbreviations.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_abbreviations.persistence.storagePid}
+	}
+	settings {
+	}
+}

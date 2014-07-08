@@ -1,0 +1,19 @@
+plugin.tx_abbreviations {
+	view {
+		# cat=plugin.tx_abbreviations/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:abbreviations/Resources/Private/Templates/
+		
+		# cat=plugin.tx_abbreviations/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:abbreviations/Resources/Private/Partials/
+		
+		# cat=plugin.tx_abbreviations/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:abbreviations/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_abbreviations//a; type=int+; label=Default storage PID
+		storagePid =
+	}
+	settings {
+
+	}
+}

@@ -1,0 +1,118 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    125,
+                    146
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+
+                    ]
+                },
+                "name": "Abbreviation",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "186778728398"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "type",
+                            "propertyType": "Integer",
+                            "uid": "846631739025"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "term",
+                            "propertyType": "String",
+                            "uid": "570833737977"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "abbreviation",
+                            "propertyType": "String",
+                            "uid": "1098128369623"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+
+        ],
+        "description": "Abbreviations for the TYPO3 Frontend. A Scheduler Task which auto-detects glossary words can be configured. No performance loss in the frontend. Use either the core htmlarea acronym or the extension's model.",
+        "emConf": {
+            "category": "be",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": "1.0"
+        },
+        "extensionKey": "abbreviations",
+        "name": "Glossary, Abbreviations",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "World Direct eBusiness Solutions GmbH",
+                "email": "ben.walch@world-direct.at",
+                "name": "Ben Walch",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+
+        ],
+        "vendorName": "WorldDirect"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2014-05-15 10:07",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}

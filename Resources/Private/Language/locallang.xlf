@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-15T10:07:26Z" product-name="abbreviations">
+		<header/>
+		<body>
+			<trans-unit id="tx_abbreviations_domain_model_abbreviation">
+				<source>Abbreviation</source>
+			</trans-unit>
+			<trans-unit id="tx_abbreviations_domain_model_abbreviation.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_abbreviations_domain_model_abbreviation.term">
+				<source>Term</source>
+			</trans-unit>
+			<trans-unit id="tx_abbreviations_domain_model_abbreviation.abbreviation">
+				<source>Abbreviation</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
